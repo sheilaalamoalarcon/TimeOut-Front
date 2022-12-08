@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --var-color-warning: #ef6c33;
+  --var-color-success: #33ffe4;
+  --var-color-panels-second: rgb(235, 255, 252, 0.8);
+  --var-color-panels: #8d2b00;
+  --var-color-buttons: #eb4700;
+  --var-color-shadow: rgb(15, 84, 75);
+  --var-box-shadow: 0 0.1rem 0.2rem 0rem var(--var-color-shadow);
+  --media-tablet: 768px;
+  --media-desktop: 1024px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Urbanist", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn-unstyled {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  border: none;
+  background: var(--var-color-buttons);
+  color: white;
+
+  &:active {
+    background: white;
+    border: 1px solid var(--var-color-buttons);
+    color: var(--var-color-buttons);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

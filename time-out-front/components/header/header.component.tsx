@@ -3,8 +3,9 @@ import styles from "./header.module.scss";
 export default function Header() {
   return (
     <div className={styles.header}>
-      <h1>Time Out</h1>
-      <img src="" alt="user-icon" />
+      <img src="/assets/icons/menu-icon.svg" alt="nav-menu" />
+      <p>Time Out</p>
+      <img src="/assets/icons/user-icon.svg" alt="user-icon" />
     </div>
   );
 }

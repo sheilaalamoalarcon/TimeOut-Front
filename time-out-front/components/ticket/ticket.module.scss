@@ -1,0 +1,22 @@
+.container {
+  position: fixed;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 15rem;
+  z-index: 100;
+  background: var(--var-color-panels-second);
+  top: 28vh;
+  left: 12vw;
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    box-shadow: var(--var-box-shadow);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+  }
+}

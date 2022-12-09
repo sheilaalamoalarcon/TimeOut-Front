@@ -1,4 +1,7 @@
 .container {
+  .modal-container {
+    padding: 1rem;
+  }
   .modal-background {
     position: absolute;
     top: 0;
@@ -8,5 +11,9 @@
     background: var(--var-color-shadow);
     opacity: 0.5;
     z-index: -1;
+  }
+  .button {
+    width: 8rem;
+    height: 8rem;
   }
 }

@@ -37,8 +37,10 @@ a {
   border: none;
   background: var(--var-color-buttons);
   color: white;
+  cursor: pointer;
 
   &:active {
+    cursor: pointer;
     background: white;
     border: 1px solid var(--var-color-buttons);
     color: var(--var-color-buttons);

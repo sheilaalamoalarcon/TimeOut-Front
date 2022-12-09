@@ -1,5 +1,7 @@
 .header {
-  padding: 0rem 1rem 0.4rem;
+  position: sticky;
+  // z-index: -2;
+  padding: 1rem 1rem;
   margin-bottom: 1.2rem;
   display: flex;
   justify-content: space-between;
@@ -7,4 +9,16 @@
   font-size: 1rem;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   background: white;
+  .logotype {
+    width: 7rem;
+  }
+  .buttons {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    button {
+      background: none;
+      border: none;
+    }
+  }
 }

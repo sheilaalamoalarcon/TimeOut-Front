@@ -1,21 +1,7 @@
 import Head from "next/head";
-import Header from "../components/header/header.component";
 import styles from "../styles/Home.module.scss";
-import Ticket from "../components/ticket/ticket.component";
-import { useState } from "react";
-
-const modal = () => {
-  return (
-    <div>
-      <Ticket></Ticket>
-      <div className={styles["modal-background"]}></div>
-    </div>
-  );
-};
 
 export default function Home() {
-  const [isOpen, setOpen] = useState(!false);
-
   return (
     <div className={styles.container}>
       <Head>
@@ -24,18 +10,21 @@ export default function Home() {
           name="description"
           content="Time tracker and error percentage per error calculator"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <main className={styles.main}>
-        <Header></Header>
-        <button
-          className="btn-unstyled"
-          onClick={() => setOpen(!isOpen)}
-          type="button"
-        >
-          Añade tu ticket
+        <h1>
+          Welcome to{" "}
+          <img
+            className={styles[""]}
+            src="/logotype.svg"
+            alt="timeout-logotype"
+          />
+        </h1>
+        <p>Time tracker and error percentage per error calculator</p>
+        <button>
+          <a href="/user-home">Go to the App</a>
         </button>
-        {isOpen && modal()}
       </main>
     </div>
   );
